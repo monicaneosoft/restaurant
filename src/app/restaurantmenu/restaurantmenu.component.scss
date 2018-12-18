@@ -1,0 +1,109 @@
+.menuItemBlock .listitem{		
+    width: 100%;
+    list-style-type: none;
+    padding: 30px 90px 30px 95px;
+    border-bottom: 1px solid #4d4d4d;
+    position: relative;
+    letter-spacing: 1.5px;	
+}
+
+.menuItemBlock .listitem .menuTypeIcon{
+	position: absolute;
+	top: 25px;
+	right: 580px;
+	color: #fff;
+	font-size: 2.5em;
+}
+.menuItemBlock .listitem .infoBar{
+	width:100%;
+	//margin: 0 40px;
+	//position: relative;
+	padding: 0 0px;
+}
+.menuItemBlock .listitem .info{
+	//position: absolute;
+	top: 20;
+	//left: 0px;
+}
+.menuItemBlock .listitem h2{
+	font-family: 'DINNextLTPro-Condensed';
+	font-size: 1.5em;
+	text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.25);
+	position: relative;
+	line-height: 1;
+}
+
+
+.menuItem_veg_circle{
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #b7f433;    
+}
+
+.menuItem_non_veg_circle{
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #bd1a05;    
+}
+
+
+.menuItemPrice{    
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 30px;    
+    color: #9f9f9f;
+    font-family: 'DINNextLTPro-LightCondensed';
+    font-size: 1.6em;
+    margin: 10px 0 0 25px;
+}
+
+.recap-abouttext{
+	font-size:18px;
+	color:#999;
+	display:block;
+    margin:20px 5px 5px 5px;    
+    height: 100px;
+    max-height: 100px;
+}
+
+
+.menuItemBlock .listitem .info .bar {
+    margin-top: 13px;
+}
+.menuItemBlock .listitem .info .line {
+    background-color: #FFFFFF;
+    height: 11px;
+    width: 50%;
+	float: left;
+}
+.menuItemBlock .listitem .info em{
+	font-style: italic;
+	font-size: 0.875em;
+	float: left;
+	margin: 0 0 0 5px;
+	line-height: 1;
+}
+.menuItemBlock .listitem .logoIcon{
+	margin: 0;
+	line-height: 0;
+	text-align: center;
+}
+.menuItemBlock .listitem .logoIcon .icon{
+	font-size: 9vw;
+}
+
+@media only screen and (max-width: 480px) {
+    .menuItemBlock .listitem .menuTypeIcon{
+        position: absolute;
+        top: 25px;
+        right: 350px;
+        color: #fff;
+        font-size: 2.5em;
+    }
+}

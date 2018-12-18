@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'DINNextLTPro-UltraLightCond';
+    src: url('../fonts/DINNextLTPro-UltraLightCond.woff2') format('woff2'),
+        url('../fonts/DINNextLTPro-UltraLightCond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINNextLTPro-Medium';
+    src: url('../fonts/DINNextLTPro-Medium.woff2') format('woff2'),
+        url('../fonts/DINNextLTPro-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINNextLTPro-HeavyCondensed';
+    src: url('../fonts/DINNextLTPro-HeavyCondensed.woff2') format('woff2'),
+        url('../fonts/DINNextLTPro-HeavyCondensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINNextLTPro-MediumCond';
+    src: url('../fonts/DINNextLTPro-MediumCond.woff2') format('woff2'),
+        url('../fonts/DINNextLTPro-MediumCond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINNextLTPro-Regular';
+    src: url('../fonts/DINNextLTPro-Regular.woff2') format('woff2'),
+        url('../fonts/DINNextLTPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINNextLTPro-Light';
+    src: url('../fonts/DINNextLTPro-Light.woff2') format('woff2'),
+        url('../fonts/DINNextLTPro-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINNextLTPro-Condensed';
+    src: url('../fonts/DINNextLTPro-Condensed.woff2') format('woff2'),
+        url('../fonts/DINNextLTPro-Condensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINNextLTPro-Condensed';
+    src: url('../fonts/DINNextLTPro-Condensed.woff2') format('woff2'),
+        url('../fonts/DINNextLTPro-Condensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINNextLTPro-HeavyItalic';
+    src: url('../fonts/DINNextLTPro-HeavyItalic.woff2') format('woff2'),
+        url('../fonts/DINNextLTPro-HeavyItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINNextLTPro-MediumItalic';
+    src: url('../fonts/DINNextLTPro-MediumItalic.woff2') format('woff2'),
+        url('../fonts/DINNextLTPro-MediumItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINNextLTPro-LightCondensed';
+    src: url('../fonts/DINNextLTPro-LightCondensed.woff2') format('woff2'),
+        url('../fonts/DINNextLTPro-LightCondensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: "dashfonticon";
+  src:url("../fonts/dashfonticon.eot");
+  src:url("../fonts/dashfonticon.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/dashfonticon.woff") format("woff"),
+    url("../fonts/dashfonticon.ttf") format("truetype"),
+    url("../fonts/dashfonticon.svg#dashfonticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "dashfonticon" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "dashfonticon" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-checkbox:before {
+  content: "\61";
+}
+.icon-close2:before {
+  content: "\63";
+}
+.icon-filter:before {
+  content: "\64";
+}
+.icon-humbergermenu:before {
+  content: "\65";
+}
+.icon-left-arrow:before {
+  content: "\66";
+}
+.icon-search:before {
+  content: "\67";
+}
+.icon-close1:before {
+  content: "\62";
+}
+.icon-allergent:before {
+  content: "\68";
+}
+.icon-veg:before {
+  content: "\69";
+}
+.icon-close-button:before {
+  content: "\6a";
+}
+.icon-vegan:before {
+  content: "\6b";
+}
+.icon-curtain-raisers:before {
+  content: "\6c";
+}
+.icon-did-you-know:before {
+  content: "\6d";
+}
+.icon-drink:before {
+  content: "\6e";
+}
+.icon-knife-fork:before {
+  content: "\6f";
+}
+.icon-prelude:before {
+  content: "\70";
+}
+.icon-non-veg:before {
+  content: "\71";
+}
+.icon-reverse:before {
+  content: "\72";
+}
+.icon-right-arrow:before {
+  content: "\73";
+}
+.icon-rupee:before {
+  content: "\74";
+}
+.icon-side-kick:before {
+  content: "\75";
+}
+.icon-star-cast:before {
+  content: "\76";
+}
+.icon-epilogue:before {
+  content: "\77";
+}
+.icon-only-circle-dots:before {
+  content: "\78";
+}
+.icon-with-dash:before {
+  content: "\79";
+}

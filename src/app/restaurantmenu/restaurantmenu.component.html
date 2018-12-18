@@ -1,0 +1,61 @@
+
+<section class="base clearfix">
+  <div class="head clearfix">		
+    <i (click)="goBack()" class="icon icon-left-arrow active"></i>
+    <h2>{{ menutypename }}</h2>
+    <i class="icon searchIcon icon-search"></i>    
+  </div>
+
+  <div class="menuBar clearfix">			
+    <div class="top clearfix">
+      <i  id="graphicMenu" (click)="showTextMenu(false)" class="humbergerMenu icon-humbergermenu active"></i>
+      <span id="textMenu" (click)="showTextMenu(true)" class="">abc</span>
+      <!-- <i class="filterIcon icon-filter" (click)="gotofilterpage(true)"></i> -->
+      <i class="filterIcon icon-filter" routerLink="sort"></i>
+    </div>
+	</div>
+
+  
+    <div [hidden]="true" id="text_menu" class="menuItemBlock clearfix" *ngIf="menus">
+
+      <div  class="listitem" *ngFor="let menu of menus" [ngSwitch]="menu.foodPref">
+          <div class="menuTypeIcon clearfix"><i class="{{menutypeicon}}"></i></div>
+          <div class="infoBar clearfix" >
+              <div class="info">
+                  <h2>{{ menu.recipeName }}                       
+                    <a *ngSwitchCase="'Veg'" class="menuItem_veg_circle"></a>
+                    <a *ngSwitchDefault class="menuItem_non_veg_circle"></a>
+                  </h2>
+                  <!--<label class="recap-abouttext">S{{menu.description}}</label>-->
+                  <div class="menuItemPrice">INR {{ menu.price }}</div>
+                </div>            
+            </div>
+      </div>
+    </div>
+  <div id="graphic_menu" class="menuItemBlock clearfix" *ngIf="menus">
+
+
+    <!--<div class="item clearfix" *ngFor="let menu of menus" (click)="menuItemOnClick(menu)" style='background: url("./assets/images/img2.jpg");background-size: cover;'> -->
+    <div  *ngFor="let menu of menus" [ngSwitch]="menu.foodPref" style='background-image: url("assets/images/img_blur.jpg")'>
+      <div class="item clearfix" (click)="menuItemOnClick(menu)" [ngStyle]="{'background-image': 'url(' + menu.thumbName + ')'}" >
+      <div class="menuTypeIcon clearfix"><i class="{{menutypeicon}}"></i></div>
+      <div class="infoBar clearfix" >
+          <div class="info">
+              <h2>{{ menu.recipeName }} 
+                  <div *ngSwitchCase="'Veg'" class="circle"></div>
+                  <div *ngSwitchDefault class="non_veg_circle"></div>
+              </h2>
+              <div class="bar clearfix">
+                  <div class="line"></div>
+                  <em>INR {{ menu.price }}</em>
+                </div>
+            </div>
+            <div class="logoIcon"><div class="icon icon-only-circle-dots"></div></div>
+        </div>        
+      </div>
+      <div style="height:20px"></div>
+    </div>
+      
+    </div>
+
+</section>

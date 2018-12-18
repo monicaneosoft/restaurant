@@ -1,0 +1,30 @@
+<div class="head clearfix">		
+    <!--<i class="icon icon-left-arrow active"></i>-->
+    <h2>Generate QR Code for restaurant</h2>
+    <!--<i class="icon searchIcon icon-search"></i>-->
+  </div>
+
+<section  class="base clearfix">
+  <div class="head clearfix">		
+    <div class="tianListBlock clearfix">
+      <div class="tianBar clearfix">
+        <label for="qr_code_restaurant">Select Restaurant:</label>
+        <select *ngIf="restaurants" class="form-control" id="qr_code_restaurant" ng-model="ng_qr_code_restaurant">
+          <option *ngFor="let restaurant of restaurants" value="{{restaurant.id}}" >{{restaurant.restaurantName}}</option>      
+        </select>
+      </div>
+      <div class="tianBar clearfix">
+      <label for="qr_code_sourcedata">QR Code Source:</label><br>
+      <input type="text" id="qr_code_sourcedata" style="width:100%"/>
+      </div>
+      <div class="tianBar clearfix">
+      <input type="button" id="generateQrCode" (click)="generateQRCode('RESTAURANT')" value="generate QR Code">
+      </div>
+      <div class="tianBar clearfix">
+          <div>
+              <input id="qr_code_image" type="image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==">
+            </div>
+      </div>
+    </div>    
+</div>
+</section>

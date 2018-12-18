@@ -1,0 +1,28 @@
+
+<!--
+  <ul *ngIf="menutypes" class="listview-ul">
+    <li [routerLink] = "['/menus', 'all', menutype.menuType ]" *ngFor="let menutype of menutypes">
+      <span class="sprite food-iconspn set-for-img"></span>
+      <h3 class="text-name">{{ menutype.menuType }}</h3>
+    </li>
+  </ul>
+-->
+
+<section  class="base clearfix">
+  <div *ngIf="restaurantMenuType" class="head clearfix">		
+    <i class="icon icon-left-arrow active"></i>
+    <h2>{{restaurantMenuType.reataurant_name}}</h2>
+    <i class="icon searchIcon icon-search"></i>    
+  </div>
+  <div *ngIf="menutypes"  class="tianListBlock clearfix" > 
+    <!--<div [routerLink] = "['/menus', menutype.resturantId, 'all', menutype.menuTypeId, menutype.menuType ]" *ngFor="let menutype of menutypes" class="tianBar clearfix">      -->
+      <div (click)="menuTypeItemOnClick($event,menutype.resturantId, restaurantMenuType.reataurant_name, menutype.menuTypeId, menutype.menuType, menutype.icon)"  *ngFor="let menutype of menutypes" class="tianBar clearfix">        
+        <i class="icon {{ menutype.icon }}"></i>
+        <span>{{ menutype.menuType }}</span>
+    </div>
+  </div>
+
+  
+</section> 
+
+

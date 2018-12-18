@@ -1,0 +1,66 @@
+<section class="videoSection clearfix">
+		<video autoplay playsinline muted loop id="myVideo" poster={{imageurl}}>
+			<source src="{{videourl}}" type="video/mp4">
+			Your browser does not support HTML5 video.
+		</video>
+		
+		<div class="learnContent">
+			<div class="backArrow clearfix">
+			
+          <a ><i (click)="goBack()" class="icon icon-left-arrow active"></i></a>
+				
+			</div>
+			<div class="contentBlock contentBlock1 clearfix" [hidden]="contentBlockIsHidden">
+          <a ><i (click)="closeDescription()"  class="closeIcon icon-close2"></i></a>
+				<div class="leftBar clearfix">
+          <!--<div class="ItemIcon"><i class="icon icon-curtain-raisers"></i></div>-->
+          <div class="ItemIcon"><i class="icon {{menutypeicon}}"></i></div>
+				</div>
+				<div class="rightContent clearfix">
+				
+					<div class="contentBar clearfix">
+						<div class="content clearfix">
+							<h2>{{recipeName}}</h2>
+							<small>{{description}}</small>
+							<div class="priceBar clearfix">
+								<div class="line"></div>
+								<em>INR {{price}}</em>
+							</div>
+						</div>
+						<div class="bottomBar clearfix">
+							<div class="separator"></div>
+							<i class="icon icon-knife-fork"></i>
+						</div>
+					</div>
+					<div class="contentBar clearfix">
+						<div class="content clearfix">
+							<p>Tofu mash</p>
+							<p>Chopped spring onion</p>
+							<p>Toasted sesame seeds</p>
+							<p>Almond flakes</p>
+							<p>Beetroot</p>
+							<p>Carrot</p>
+							<p>Asparagus</p>
+							<p>Black fungus</p>
+							<p>Sweetened Japanese black beans called ‘Kuromame’</p>
+							<p>Sesame sauce</p>
+						</div>
+						<div class="bottomBar clearfix">
+							<div class="separator"></div>
+							<i class="icon icon-did-you-know"></i>
+						</div>
+					</div>					
+					<div class="contentBar clearfix">
+						<div class="content clearfix">
+							<span>Did You know?</span>
+							<p class="text">Kuromame, literally translating to ‘black beans’, are a type of soy bean that are rich in anti-oxidants and iron. They are traditionally served on Japanese New Year’s Day.</p>
+						</div>
+					</div>
+				
+				</div>
+				
+      </div>
+      <div (click)="showDescription()" [hidden]="learnMoreIsHidden" class="learnBtn clearfix"><a >Learn More</a></div>
+		</div>
+	</section>
+
